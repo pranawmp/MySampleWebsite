@@ -1,0 +1,65 @@
+form{
+    font-size: large;
+    /* color: rgb(24, 212, 165);*/
+    color: darkblue;
+}
+.hello{
+    width: 20%;
+    background-color: #882255;
+}
+h1{
+    /* width: 30%; */
+    background-color: yellowgreen;
+    color: #115588;
+}
+
+.hi{
+    width: 300px;
+    background-color: #220011;
+    /* text-align: right; */
+}
+
+select{
+    background-color: rgb(20, 204, 60);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: x-large;
+}
+
+textarea{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    color: rgb(198, 43, 219);
+    background-color: rgb(240, 231, 150);
+    /* padding-left: 30%; */
+    /* padding-right: 20%; */
+    
+}
+
+body{
+    background-color: aquamarine;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: fantasy;
+    /* width: 80%; */
+    color: darkslateblue;
+}
+
+.txt {
+    background-color: rgb(124, 184, 251);
+    font-size: x-large;
+    font-weight: bolder;
+    color: #553333;
+}
+
+input{
+    background-color: slateblue;
+    color: #ffffff;
+    font-size: x-large;
+}
+
+.special{
+    background-color: chartreuse;
+    color: rgb(205, 4, 255);
+    font-weight: bolder;
+    font-size: large;
+}
