@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        function showsq(){
+            var a;
+            // document.nxt.area.value="hello";
+            b=document.nxt.number.value;
+            a=document.box.num.value;
+            document.box.sq.value=a*a;
+            document.box.cube.value=a*a*a;
+        }
+        function printprimes(){
+            // document.nxt.area.write("hello<br>");
+            var b,i,j;
+            var flag=true;
+            b=document.nxt.number.value;
+            for(i=2;i<=b;i++){
+                flag=true;
+                for(j=2;j<=i/2;j++){
+                    if(i%j==0){
+                        flag=false;
+                    }
+                }
+                if(flag==true){
+                    document.nxt.area.value=i;
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="1.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>let's learn some facts</title>
+    <title>My Sample Website</title>
 </head>
-<body bgcolor="#66cc88" text="#1111ff">
-    <h1 align="center">Let's learn some facts</h1>
-    <P>
-        The 7 major cities in India are given below.
-        <ul>
-            <li>NewDelhi</li>
-            <li>Mumbai</li>
-            <li>Banglore</li>
-            <li>Hyderabad</li>
-            <li>Chennai</li>
-            <li>Kolkata</li>
-            <li>Ahmedabad</li>
-
-        </ul>
+<body>
+    <h1>Be ready</h1>
+    <form action="hi.php" name="box">
+        Enter num : 
+        <input class="txt" type="text" name="num"><br>
+        Square : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" class="txt" name="sq"  >
         <br>
-       <h3> Some world facts :</h3>
-        <dl>
-            <dt>Largest Country:</dt>
-            <dd>Russia</dd>
-            <dt>Longest River:</dt>
-            <dd>Nile</dd>
-            <dt>Largest River:</dt>
-            <dd>Amazon</dd>
-            <dt>Largest Ocean:</dt>
-            <dd>Pacific ocean</dd>
-            <dt>Largest flower:</dt>
-            <dd>Rufflesia</dd>
-            <dt>Largest animal:</dt>          
-            <dd>Blue Whale</dd>
-        </dl>
-        
-    </P>
-    <Font size="6" color="#000000">
-    <marquee behavior="" direction="left" bgcolor="yellow" > <b>
-        Follow this website to learn new facts 
-        daily. And don't forget to hit the 
-        subscribe button.</b>
-    </marquee>
-    </Font>
+       
+        Cube : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="txt" type="text" name="cube" id=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" name="bot" value="show" onclick="showsq()"><br>
+    </form>
+
+    <form name="nxt" action="hi.php">
+        <br><br><br><br>
+        Enter the Number: <br>
+        <input type="text" name="number" id="">
+        <br><br>
+        <input class="special" type="button" value="CLICK" name="" id="" onclick="printprimes()">
+        <br><br>Highest prime num less than equal the entered number : <br>
+        <input type="text" name="area" id="">
+    </form>
+
 </body>
 </html>
