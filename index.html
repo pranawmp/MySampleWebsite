@@ -15,15 +15,17 @@
             var b,i,j;
             var flag=true;
             b=document.nxt.number.value;
-            for(i=2;i<=b;i++){
+            for(i=b;i>=2;i--){
                 flag=true;
                 for(j=2;j<=i/2;j++){
                     if(i%j==0){
                         flag=false;
+                        break;
                     }
                 }
                 if(flag==true){
                     document.nxt.area.value=i;
+                    break;
                 }
             }
         }
